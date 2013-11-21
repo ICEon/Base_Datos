@@ -6,7 +6,7 @@ var db = openDatabase ("Test", "1.0", "Test", 65535);
 $("#create").bind ("click", function (event)
 {
  var infoField = document.getElementById("infoField");
-                infoField.innerHTML = device.model;
+                infoField.innerHTML = device.name;
 				
   db.transaction (function (transaction) 
   {
