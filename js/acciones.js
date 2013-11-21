@@ -1,11 +1,11 @@
-
+$(document).ready(function(e) {
+	alert ("Here");
 
 var db = openDatabase ("Test", "1.0", "Test", 65535);
 
 $("#create").bind ("click", function (event)
 {
- var infoField = document.getElementById("infoField");
-                infoField.innerHTML = device.model;
+
 				
   db.transaction (function (transaction) 
   {
@@ -95,3 +95,4 @@ function error (transaction, err)
   alert ("DB error : " + err.message);
   return false;
 }    
+});
