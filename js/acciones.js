@@ -2,7 +2,7 @@ var db = openDatabase ("Test", "1.0", "Test", 65535);
 
 $("#create").bind ("click", function (event)
 {
-alert ("here");
+alert (device.name);
   db.transaction (function (transaction) 
   {
     var sql = "CREATE TABLE customers " +
