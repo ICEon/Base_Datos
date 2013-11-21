@@ -1,4 +1,6 @@
 $(document).ready(function(e) {
+	 document.addEventListener("deviceready",function(){
+		 
 	alert ("Here");
 
 var db = openDatabase ("Test", "1.0", "Test", 65535);
@@ -96,4 +98,5 @@ function error (transaction, err)
   alert ("DB error : " + err.message);
   return false;
 }    
+	 }, false);
 });
