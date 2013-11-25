@@ -74,15 +74,15 @@ $("#list").bind ("click", function (event)
       
       a_html += "</ul>";
       
-      $("#win2").unbind ().bind ("pagebeforeshow", function ()
+      $("#listado").unbind ().bind ("pagebeforeshow", function ()
       {
-        var $contenido = $("#win2 div:jqmData(role=content)");
+        var $contenido = $("#listado div:jqmData(role=content)");
         $contenido.html (a_html);
         var $ul = $contenido.find ("ul");
         $ul.listview ();
       });
       
-      $.mobile.changePage ($("#win2"));
+      $.mobile.changePage ($("#listado"));
       
     }, error);
   });
