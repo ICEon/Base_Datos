@@ -54,14 +54,14 @@ $("#list").bind ("click", function (event)
   {
     var sql = "SELECT * FROM customers";
     ejecutar.executeSql (sql, undefined, 
-    function (ejecutar, result)
+    function (ejecutar, resultado)
     {
       var html = "<ul>";
-      if (result.rows.length)
+      if (resultado.rows.length)
       {
-        for (var i = 0; i < result.rows.length; i++) 
+        for (var i = 0; i < resultado.rows.length; i++) 
         {
-          var fila = result.rows.item (i);
+          var fila = resultado.rows.item (i);
           var lname = fila.lname;
           var fname = fila.fname;
           html += "<li>" + lname + "&nbsp;" + fname + "</li>";
