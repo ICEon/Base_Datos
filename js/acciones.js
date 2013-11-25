@@ -56,7 +56,7 @@ $("#list").bind ("click", function (event)
     ejecutar.executeSql (sql, undefined, 
     function (ejecutar, resultado)
     {
-      var html = "<ul>";
+      var a_html = "<ul>";
       if (resultado.rows.length)
       {
         for (var i = 0; i < resultado.rows.length; i++) 
@@ -69,15 +69,15 @@ $("#list").bind ("click", function (event)
       }
       else
       {
-        html += "<li> No customer </li>";
+        a_html += "<li> No customer </li>";
       }
       
-      html += "</ul>";
+      a_html += "</ul>";
       
       $("#win2").unbind ().bind ("pagebeforeshow", function ()
       {
         var $contenido = $("#win2 div:jqmData(role=content)");
-        $contenido.html (html);
+        $contenido.html (a_html);
         var $ul = $contenido.find ("ul");
         $ul.listview ();
       });
