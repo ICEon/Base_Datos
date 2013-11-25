@@ -61,9 +61,9 @@ $("#list").bind ("click", function (event)
       {
         for (var i = 0; i < result.rows.length; i++) 
         {
-          var row = result.rows.item (i);
-          var lname = row.lname;
-          var fname = row.fname;
+          var fila = result.rows.item (i);
+          var lname = fila.lname;
+          var fname = fila.fname;
           html += "<li>" + lname + "&nbsp;" + fname + "</li>";
         }
       }
