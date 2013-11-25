@@ -64,7 +64,7 @@ $("#list").bind ("click", function (event)
           var fila = resultado.rows.item (i);
           var lname = fila.lname;
           var fname = fila.fname;
-          html += "<li>" + lname + "&nbsp;" + fname + "</li>";
+          a_html += "<li>" + lname + "&nbsp;" + fname + "</li>";
         }
       }
       else
