@@ -76,9 +76,9 @@ $("#list").bind ("click", function (event)
       
       $("#win2").unbind ().bind ("pagebeforeshow", function ()
       {
-        var $content = $("#win2 div:jqmData(role=content)");
-        $content.html (html);
-        var $ul = $content.find ("ul");
+        var $contenido = $("#win2 div:jqmData(role=content)");
+        $contenido.html (html);
+        var $ul = $contenido.find ("ul");
         $ul.listview ();
       });
       
