@@ -50,11 +50,11 @@ $("#insert").bind ("click", function (event)
 
 $("#list").bind ("click", function (event)
 {
-  db.transaction (function (transaction) 
+  db.transaction (function (ejecutar) 
   {
     var sql = "SELECT * FROM customers";
-    transaction.executeSql (sql, undefined, 
-    function (transaction, result)
+    ejecutar.executeSql (sql, undefined, 
+    function (ejecutar, result)
     {
       var html = "<ul>";
       if (result.rows.length)
